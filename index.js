@@ -27,7 +27,7 @@ function generetePassword(){
     let pass = ""
     
     if(chosenOption == "completo"){
-        pass = charsetSpecials.charAt(Math.floor(Math.random() * charsetSpecials.length);
+        pass = charsetSpecials.charAt(Math.floor(Math.random() * charsetSpecials.length));
     
         for(let i = 0, n = charsetComplete.length; i < sliderElement.value; ++i){
             pass += charsetComplete.charAt(Math.floor(Math.random() * n));
