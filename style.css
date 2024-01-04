@@ -17,8 +17,12 @@ body{
     flex-direction: column;
 }
 
+img {
+    height: 200px;
+    width: 250px;
+}
+
 .logo{
-    heigth:100px;
     margin-bottom: 4px;
 }
 
