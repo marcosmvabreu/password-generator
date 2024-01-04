@@ -9,6 +9,7 @@ let passwordComposition = document.getElementById('opcoes')
 let containerPassword = document.querySelector("#container-password")
 
 let charsetComplete = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@*-."
+let charsetSpecials = "!@*-."
 let charsetNumbers = "0123456789"
 let charsetLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 let charsetLettersAndNumubers = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
@@ -26,8 +27,10 @@ function generetePassword(){
     let pass = ""
     
     if(chosenOption == "completo"){
+        pass = charsetSpecials.charAt(Math.floor(Math.random() * charsetSpecials.length);
+    
         for(let i = 0, n = charsetComplete.length; i < sliderElement.value; ++i){
-            pass += charsetComplete.charAt(Math.floor(Math.random() * n))
+            pass += charsetComplete.charAt(Math.floor(Math.random() * n));
         }
     }
     else if(chosenOption == "letras"){
